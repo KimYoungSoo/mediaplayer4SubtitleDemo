@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dip"
+    android:layout_height="720dip"
+    android:background="#000000" >
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </SurfaceView>
+
+    <SurfaceView
+        android:id="@+id/video_subtitle_surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="#000000" >
+
+        <!-- android:background="@android:color/transparent" > -->
+    </SurfaceView>
+    <!-- 文本字幕view -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dip" >
+
+        <TextView
+            android:id="@+id/video_subtitle_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="40sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reset"
+            android:text="切换内置字幕" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop"
+            android:text="插入外挂字幕" />
+    </LinearLayout>
+
+</FrameLayout>
