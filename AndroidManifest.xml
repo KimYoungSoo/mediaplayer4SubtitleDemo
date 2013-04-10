@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcl.lgb.test"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.tcl.liugb.subtitledemo.MediaPlayerDemo4Video"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/vnd.tcl.playlist-video" />
+                <data android:scheme="http" />
+                <data android:scheme="" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest>
